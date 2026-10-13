@@ -14,3 +14,4 @@ warn("PR is too large") if git.lines_of_code > 500
 warn("Update README") if git.modified_files.any? && !git.modified_files.include?("README.md")
 
 # Confirmation
+message("Danger has completed the PR checks!")
